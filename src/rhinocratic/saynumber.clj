@@ -132,7 +132,7 @@
     (neg-int? n) (str "minus ")))
 
 (defn say-number
-  "Express a number in words"
+  "Express a number in words.  The number must be in the range Long/MIN_VALUE <= n <= Long/MAX_VALUE."
   [n]
   (->> n
        abs
